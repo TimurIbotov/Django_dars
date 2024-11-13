@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% load bootstrap4 %}
+{% bootstrap_form form %}
+{% block title %}Ro'yxatdan o'tish{% endblock title %}
+
+{% block content %}
+    <h2>Ro'yxatdan o'tish</h2>
+    <form method="post">{% csrf_token %}
+        {% bootstrap_form form %}
+        <button type="submit" class="btn btn-danger">Yuborish</button>
+    </form>
+{% endblock content %}
