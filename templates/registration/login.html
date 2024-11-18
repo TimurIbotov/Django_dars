@@ -7,5 +7,6 @@
     <form method="post">{% csrf_token %}
         {% bootstrap_form form %}
         <button type="submit" class="btn btn-success">Kirish</button>
+        <a class="btn btn-outline-danger" href="{% url 'password_reset' %}" role="button">Kalit so'zni o'zgartirish</a>
     </form>
 {% endblock content %}
